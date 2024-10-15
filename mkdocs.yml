@@ -1,0 +1,17 @@
+site_name: To Do List - V360
+
+copyright: "Copyright &copy; 2024"
+
+theme:
+  name: material
+  language: "pt"
+  palette:
+    primary: blue
+    accent: amber
+# features:
+#     - navigation.tabs
+  font:
+    text: "Open Sans"
+    code: "sans-serif"
+  # logo: assets/leafFavcon.svg
+  # favicon: assets/leafFavcon.svg
