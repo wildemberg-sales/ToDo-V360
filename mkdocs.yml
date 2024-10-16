@@ -6,8 +6,8 @@ theme:
   name: material
   language: "pt"
   palette:
-    primary: blue
-    accent: amber
+    primary: '#592a9e'
+    accent: '#FF5C13'
 # features:
 #     - navigation.tabs
   font:
@@ -15,3 +15,9 @@ theme:
     code: "sans-serif"
   # logo: assets/leafFavcon.svg
   # favicon: assets/leafFavcon.svg
+
+nav:
+  - Home: index.md
+  - Brainstorm: brainstorm.md
+  - Backlog: backlog.md
+  - Arquitetura: arquitetura.md
