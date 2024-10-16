@@ -10,14 +10,17 @@ E por fim o terceiro artefato consiste no Diagrama lógico de dados, que é util
 ## Representação Arquitetural
 Para este projeto foi definido uma arquitetura em camadas, essa arquitetura irá consistir em 3 camadas, a de apresentação que irá ser a da interface do usuários (front-end) que será codificado usando a ferramenta NexjJS, a camada de lógica de negócios que será a API de comunicação entre a interface e o banco de dados, onde a API será feita utilizando Python e FastAPI, e a última camada será a de dados que é responsável por ter o sistema de banco de dados Postgresql. A seguir na imagem 1 temos a imagem do diagrama de relações:  
 
-<figcaption align="center">Imagem 1: Diagrama de Relações</figcaption>
+<figcaption>Imagem 1: Diagrama de Relações</figcaption>
+![alt text](Representacao_Arquitetural.jpg)
 
 ## Diagrama de Classe
 Para este projeto será utilizado somente um classe é a representação das tarefas que serão cadastradas na aplicação, essa classe irá possuir o seguinte atributos: id, nome, descrição, data, horário e prioridade. A seguir na imagem 2 podemos ver a imagem do diagrama de classe:  
 
-<figcaption align="center">Imagem 2: Diagrama de Classe</figcaption>
+<figcaption>Imagem 2: Diagrama de Classe</figcaption>
+![alt text](diagramadeclasse.jpg)
 
 ## Diagrama Lógico de Dados
 Ao analisar o projeto, identifica-se que o banco de dados irá possuir somente a entidade Tarefa, com isso não havendo outras entidades e portanto não existem relações. A entidade Tarefa irá possuir os mesmos atributos que sua classe no diagrama de classes, assim pode-se observar na imagem 3 o diagrama lógico de dados:
 
-<figcaption align="center">Imagem 3: Diagrama Lógico de Dados</figcaption>
+<figcaption>Imagem 3: Diagrama Lógico de Dados</figcaption>
+![alt text](diagramalogico.jpg)
