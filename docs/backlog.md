@@ -24,6 +24,9 @@ A seguir na tabela 1, temos o backlog do projeto modelado pelas histórias de us
 | US6  | Eu, como usuário, gostaria de definir a prioridade da tarefa (baixa, média ou alta), para que eu possa focar nas atividades mais importantes. |
 | US7  | Eu, como usuário, gostaria de marcar as tarefas concluídas, para que eu possa visualizar meu progresso. |
 | US8  | Eu, como usuário, gostaria de identificar as tarefas atrasadas, para que eu possa tomar providências imediatas. |
+| US9  | Eu, como usuário, gostaria de ter várias listas de ToDo, para que eu possar separar minhas tarefas. |
+| US10 | Eu, como usuário, gostaria de poder apagar uma lista de ToDo, para excluir o que eu não querer mais. |
+| US11 | Eu, como usuário, gostari de poder editar o nome e a descrição das listas de ToDo já criadas, para poder atualizar os dados dela. |
 
 ## Conclusão
 Portanto, após a modelagem dos requisitos e conclusão da definição do nosso escopo do backlog, podemos prosseguir para a etapa de planejamento e desenvolvimento da arquitetura do nosso projeto.
