@@ -3,15 +3,52 @@ version: '3.8'
 services:
   db:
     image: postgres:latest
-    container_name: pg
+    container_name: db
     environment:
       POSTGRES_USER: admin
       POSTGRES_PASSWORD: admin
       POSTGRES_DB: todolist
-    ports:
-      - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+    networks:
+      - net
+
+  api:
+    container_name: api
+    build:
+      context: todo-list-api
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    volumes:
+      - apiVolume:/api
+    ports:
+      - 3000:3000
+    networks:
+      - net
+
+  web:
+    container_name: web
+    build:
+      context: todo-list-web
+      dockerfile: Dockerfile
+    depends_on:
+      - api
+    volumes:
+      - webVolume:/web
+    networks:
+      - net
+    ports:
+      - 80:3000
 
 volumes:
   postgres_data:
+    name: postgres_data
+  apiVolume:
+    name: apiVolume
+  webVolume:
+    name: webVolume
+
+networks:
+  net:
+    name: net
