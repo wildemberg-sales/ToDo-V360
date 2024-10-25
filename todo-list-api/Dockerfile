@@ -4,10 +4,8 @@ RUN apt-get update -qq && apt-get install -y nodejs postgresql-client libpq-dev 
 
 WORKDIR /api
 
-COPY Gemfile Gemfile.lock ./
-RUN bundle install
-
 COPY . .
+RUN bundle install
 
 RUN chmod +x setup.sh
 
